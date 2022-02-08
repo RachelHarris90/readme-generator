@@ -34,11 +34,11 @@ const promptUser = () => {
             message: 'What are the test instructions for your project?'
         },
         {
-          type: 'input',
+          type: 'list',
           name: 'license',
-          message: 'Select the license for your project'
+          message: 'Select the license for your project',
+          choices: ['MIT License', 'Mozilla Public License 2.0', 'Apache License 2.0', 'GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'The Unlicense', 'Boost Software License 1.0']
         },
-//TODO: Add list of licence options
         {
           type: 'input',
           name: 'github',
@@ -64,8 +64,8 @@ const generateHTML = ({ title, description, installation, usage, contribution, t
 <body>
   <div class="jumbotron jumbotron-fluid">
   <div class="container">
-  <h3>License: <span class="badge badge-secondary">${license}</span></h3>
     <h1 class="display-4">${title}</h1>
+    <h3>License: <span class="badge badge-secondary">${license}</span></h3>
     <ul class="list-group pb-3">
       <li class="list-group-item"><a href="#description">Description</a></li>
       <li class="list-group-item"><a href="#installation">Installation instructions</a></li>
@@ -84,8 +84,6 @@ const generateHTML = ({ title, description, installation, usage, contribution, t
       <p>${contribution}.</p>
     <h2 class="display-5" id="test">Test instructions</h2>
       <p>${test}.</p>
-    <h2 class="display-5" id="license">License</h2>
-      <p>${installation}.</p>
     <h2 class="display-5" id="questions">Questions</h2>
       <p>My GitHub username is <a href="https://github.com/${github}">${github}</a></p>
       <p>Contact me via email at <a href="mailto:${email}">${email}</a></p>
