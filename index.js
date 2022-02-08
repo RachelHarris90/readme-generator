@@ -87,8 +87,8 @@ const generateHTML = ({ title, description, installation, usage, contribution, t
     <h2 class="display-5" id="license">License</h2>
       <p>${installation}.</p>
     <h2 class="display-5" id="questions">Questions</h2>
-      <p>My GitHub username is ${github}</p>
-      <p>Contact me via email at <a href="mailto:${email}">${email}< /a></p>
+      <p>My GitHub username is <a href="https://github.com/${github}">${github}</a></p>
+      <p>Contact me via email at <a href="mailto:${email}">${email}</a></p>
   </div>
 </div>
 </body>
