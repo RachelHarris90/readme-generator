@@ -68,25 +68,26 @@ const generateHTML = ({ title, description, installation, usage, contribution, t
     <h3>License: <span class="badge badge-secondary">${license}</span></h3>
     <ul class="list-group pb-3">
       <li class="list-group-item"><a href="#description">Description</a></li>
-      <li class="list-group-item"><a href="#installation">Installation instructions</a></li>
-      <li class="list-group-item"><a href="#usage">Usage information</a></li>
-      <li class="list-group-item"><a href="#contribution">Contribution guidelines</a></li>
-      <li class="list-group-item"><a href="#test">Test instructionss</a></li>
+      <li class="list-group-item"><a href="#installation">Installation </a></li>
+      <li class="list-group-item"><a href="#usage">Usage</a></li>
+      <li class="list-group-item"><a href="#contribution">Contributing guidelines</a></li>
+      <li class="list-group-item"><a href="#test">Tests</a></li>
       <li class="list-group-item"><a href="#questions">Questions</a></li>
     </ul>
     <h2 class="display-5" id="description">Description</h2>
       <p>${description}.</p>
-    <h2 class="display-5" id="installation">Installation instructions</h2>
+    <h2 class="display-5" id="installation">Installation</h2>
       <p>${installation}.</p>
-    <h2 class="display-5" id="usage">Usage information</h2>
+    <h2 class="display-5" id="usage">Usage</h2>
       <p>${usage}.</p>
-    <h2 class="display-5" id="contribution">Contribution guidelines</h2>
+    <h2 class="display-5" id="contribution">Contributing</h2>
       <p>${contribution}.</p>
-    <h2 class="display-5" id="test">Test instructions</h2>
+    <h2 class="display-5" id="test">Tests</h2>
       <p>${test}.</p>
+    <h2 class="display-5" id="license">License</h2>
+      <p>The license for this project is ${license}.</p>
     <h2 class="display-5" id="questions">Questions</h2>
-      <p>My GitHub username is <a href="https://github.com/${github}">${github}</a></p>
-      <p>Contact me via email at <a href="mailto:${email}">${email}</a></p>
+      <p>If you'd like to know more about this project, you can reach out to me at <a href="mailto:${email}">${email}</a>. Alternatively, check out my Github profile <a href="https://github.com/${github}">${github}.</a>
   </div>
 </div>
 </body>
