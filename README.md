@@ -38,7 +38,7 @@ The use this application, ensure the dependencies are installed.
 
 After running the application from the command-line, an index.html page is generated and can be viewed in a web browser.
 
-An example is available at [Github pages](https://rachelharris90.github.io/rachel-harris-portfolio-website/)
+An example is available at [Github pages](https://rachelharris90.github.io/readme-generator/)
 
 ## License
 Not licensed.
