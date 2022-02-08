@@ -47,6 +47,8 @@ After running the application from the command-line, an index.html page is gener
 
 An example is available at [Github pages](https://rachelharris90.github.io/readme-generator/)
 
+Watch [this video](https://watch.screencastify.com/v/jnn0r1p51Tvbr4aqEUPg) to see it in action 
+
 ## License
 Not licensed.
 
