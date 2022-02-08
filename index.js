@@ -42,12 +42,12 @@ const promptUser = () => {
         {
           type: 'input',
           name: 'github',
-          message: 'What are the test instructions for your project?'
+          message: 'What is your Github username?'
         },
         {
           type: 'input',
           name: 'email',
-          message: 'Select the license for your project'
+          message: 'What is your email address?'
       },
     ]);
 } 
@@ -64,21 +64,21 @@ const generateHTML = ({ title, description, installation, usage, contribution, t
 <body>
   <div class="jumbotron jumbotron-fluid">
   <div class="container">
-  <h3>License: <span class="badge badge-secondary">${license}.</span></h3>
+  <h3>License: <span class="badge badge-secondary">${license}</span></h3>
     <h1 class="display-4">${title}</h1>
     <ul class="list-group">
-      <li class="list-group-item"><a href="description"</a>Description</li>
-      <li class="list-group-item">Installation instructions</li>
-      <li class="list-group-item">Usage information</li>
-      <li class="list-group-item">Contribution guidelines</li>
-      <li class="list-group-item">Test instructions</li>
-      <li class="list-group-item">Questions</li>
+      <li class="list-group-item"><a href="#description">Description</a></li>
+      <li class="list-group-item"><a href="#installation">Installation instructions</a></li>
+      <li class="list-group-item"><a href="#usage">Usage information</a></li>
+      <li class="list-group-item"><a href="#contribution">Contribution guidelines</a></li>
+      <li class="list-group-item"><a href="#test">Test instructionss</a></li>
+      <li class="list-group-item"><a href="#questions">Questions</a></li>
     </ul>
     <h2 class="display-5" id="description">Description</h2>
       <p>${description}.</p>
     <h2 class="display-5" id="installation">Installation instructions</h2>
       <p>${installation}.</p>
-    <h2 class="display-5" id="useage">Usage information</h2>
+    <h2 class="display-5" id="usage">Usage information</h2>
       <p>${usage}.</p>
     <h2 class="display-5" id="contribution">Contribution guidelines</h2>
       <p>${contribution}.</p>
@@ -88,7 +88,7 @@ const generateHTML = ({ title, description, installation, usage, contribution, t
       <p>${installation}.</p>
     <h2 class="display-5" id="questions">Questions</h2>
       <p>My GitHub username is ${github}</p>
-      <p>Contact me via email at ${email}</p>
+      <p>Contact me via email at <a href="mailto:${email}">${email}< /a></p>
   </div>
 </div>
 </body>
