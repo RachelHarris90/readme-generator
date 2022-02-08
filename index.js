@@ -66,7 +66,7 @@ const generateHTML = ({ title, description, installation, usage, contribution, t
   <div class="container">
   <h3>License: <span class="badge badge-secondary">${license}</span></h3>
     <h1 class="display-4">${title}</h1>
-    <ul class="list-group">
+    <ul class="list-group pb-3">
       <li class="list-group-item"><a href="#description">Description</a></li>
       <li class="list-group-item"><a href="#installation">Installation instructions</a></li>
       <li class="list-group-item"><a href="#usage">Usage information</a></li>
